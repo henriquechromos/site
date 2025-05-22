@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Conhece-te a ti mesmo</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      animation: blink 1s infinite alternate;
+      font-family: Arial, sans-serif;
+    }
+
+    @keyframes blink {
+      0%   { background-color: #000000; }
+      100% { background-color: #2222ff; }
+    }
+
+    .scrolling-text {
+      position: absolute;
+      top: 50%;
+      white-space: nowrap;
+      font-size: 2em;
+      color: white;
+      animation: moveText 10s linear infinite;
+    }
+
+    @keyframes moveText {
+      0%   { left: 100%; }
+      100% { left: -100%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="scrolling-text">Conhece-te a ti mesmo</div>
+</body>
+</html>
